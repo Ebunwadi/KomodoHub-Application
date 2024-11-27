@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/schoolNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="School Name"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/subscriptionStatusTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status: Active"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/studentCountTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Students: 0"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/teacherCountTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Teachers: 0"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/toggleSubscriptionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activate" />
+</LinearLayout>

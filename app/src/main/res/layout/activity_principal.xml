@@ -1,0 +1,57 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Heading for the Student-Teacher Table -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="List of Students and Their Teachers"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <!-- TableLayout for displaying students and their assigned teachers -->
+        <TableLayout
+            android:id="@+id/studentTeacherTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:padding="10dp" />
+
+        <!-- Messaging Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Message School Admin"
+            android:textSize="18sp"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/messageInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type your message here" />
+
+        <Button
+            android:id="@+id/sendMessageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Message" />
+
+        <TextView
+            android:id="@+id/adminMessageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No new messages"
+            android:textSize="16sp"
+            android:padding="10dp" />
+    </LinearLayout>
+</ScrollView>

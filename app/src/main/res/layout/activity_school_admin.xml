@@ -1,0 +1,128 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- School Details -->
+        <TextView
+            android:id="@+id/schoolDetailsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="School Details"
+            android:textSize="18sp"
+            android:padding="10dp" />
+
+        <!-- Register Student -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register Student"
+            android:textSize="18sp"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/studentNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Student Name" />
+
+        <EditText
+            android:id="@+id/studentEmailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Student Email" />
+
+        <EditText
+            android:id="@+id/studentPasswordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Student Password"
+            android:inputType="textPassword" />
+
+        <Spinner
+            android:id="@+id/assignTeacherSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/registerStudentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register Student" />
+
+        <!-- Register Teacher -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register Teacher"
+            android:textSize="18sp"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/teacherNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teacher Name" />
+
+        <EditText
+            android:id="@+id/teacherEmailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teacher Email" />
+
+        <EditText
+            android:id="@+id/teacherPasswordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teacher Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/registerTeacherButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register Teacher" />
+
+        <!-- Messaging Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Message Principal"
+            android:textSize="18sp"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/adminMessageInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type your message here" />
+
+        <Button
+            android:id="@+id/sendMessageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Message" />
+
+        <TextView
+            android:id="@+id/principalMessageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No messages from the principal"
+            android:textSize="16sp"
+            android:padding="10dp" />
+
+        <!-- Subscription Toggle -->
+        <ToggleButton
+            android:id="@+id/subscriptionToggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textOn="Subscription Active"
+            android:textOff="Subscription Inactive" />
+
+    </LinearLayout>
+</ScrollView>
